@@ -1,0 +1,265 @@
+*{
+    
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-image: url('./images/bg.png');
+    object-fit:cover;
+    background-color: black;
+    height: 100%;
+    color: #fff;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.section{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+   
+}
+.section1{
+    height: 200px;
+}
+
+.sub{
+    display: flex;
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(280deg, #013e3f, #002125);
+    border-radius: 10px;
+}
+
+.sub1{
+    display: flex;
+    width: 40%;
+    height: 100%;
+    justify-content: center;
+    background: radial-gradient(circle farthest-side, #fceabb, #f8b500);
+    border-radius: 10px;
+}
+
+@media screen and (max-width:550px) {
+    .sub{
+        width: 90%;
+    }   
+    .sub1{
+        width: 90%;
+    }    
+
+    .profilepic{
+        position: absolute;
+        top: 12%;
+        height: 150px;
+        width: 150px;
+        
+    }
+
+    .profilepic img{
+        height: 80%;
+        width: 80%;
+        border-radius: 50%;
+    }
+    .profile{
+        margin-top: 25%;
+    }
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    background: linear-gradient(280deg, #013e3f, #002125);
+}
+
+.profilepic{
+    position: absolute;
+    top: 17%;
+    height: 200px;
+    width: 200px;
+    
+}
+.profilepic img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 70px;
+    align-items: center;
+    font-size: larger;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.profile span{
+    margin: -7px;
+}
+
+.name{
+    font-size: xx-large;
+
+}
+
+.company{
+    font-size: 120%;
+}
+.socialicons{
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.icon:hover{
+    transition: all 0.5s;
+    scale: 120%;
+}
+
+
+#sub3 p {
+    margin: 20px;
+    text-align: justify;
+}
+
+.savecontact{
+    text-decoration: none;
+    background-color: white;
+    width: auto;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 5;
+    right: 0;
+    margin: 10px;
+    bottom: 0;
+    
+}
+
+.savecontact p{
+    display: none;
+    text-decoration:none;
+    color: black;
+}
+
+#forminput{
+    font-size: 20px;
+    height:43%;
+    width: 60%;
+    position: relative;
+    top: 3%;
+    padding-left: 5%;
+    border-radius: 20px 0px 0px 20px;
+}
+
+#formbutton{
+    height: 49%;
+    width: 22%;
+    position: relative;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(24, 209, 24);
+    border-radius: 0px 20px 20px 0px;
+}
+
+.section4{
+    height: 200px;
+}
+
+.section5{
+    height:max-content;
+}
+
+.section5 img{
+    padding: 5px;
+}
+
+.section5 p{
+    padding: 5px;
+    text-align: justify;
+}
+
+
+.section6{
+    height:max-content;
+}
+
+.section img{
+    padding: 5px;
+    height: 100%;
+}
+
+.section p{
+    padding: 5px;
+    text-align: justify;
+}
+
+.image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+
+#eqbuttion {
+    background-color: #28a745; /* Green background */
+    color: white; /* White text color */
+    border: 2px solid #28a745; /* Border matching the background color */
+    padding: 12px 24px; /* Spacing inside the button */
+    font-size: 18px; /* Larger font size */
+    font-family: 'Arial', sans-serif; /* Clean font */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 1px; /* Slightly spaced-out letters */
+    border-radius: 10px; /* Circular corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    outline: none; /* Remove outline on focus */
+}
+
+#eqbuttion:hover {
+    background-color: #218838; /* Darker green on hover */
+    border-color: #218838; /* Change border color on hover */
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    transform: translateY(-3px); /* Lift the button slightly on hover */
+}
+
+#eqbuttion a {
+    color: white; /* Make sure the link text stays white */
+    text-decoration: none; /* Remove underline from the link */
+}
+
+#eqbuttion a:hover {
+    color: white; /* Ensure the text color remains white on hover */
+}
+
+

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORLD OF JEWELLERS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styling to make the page neat and consistent */
+        body {
+            background-color: #002125;
+            color: #ffffff;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .savecontact {
+            text-decoration: none;
+            background-color: #f8b500;
+            padding: 10px;
+            border-radius: 10px;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            display: flex;
+            align-items: center;
+            color: black;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .savecontact:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+
+        .savecontact img {
+            margin-right: 10px;
+        }
+
+        .main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .sub {
+            background: linear-gradient(280deg, #013e3f, #002125);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .sub h2, .sub h3, .sub h1 {
+            color: #f8b500;
+            text-align: center;
+        }
+
+        .profilepic img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .socialicons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            background-color: white;
+            border-radius: 50px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .icon img {
+            transition: transform 0.3s;
+        }
+
+        .icon:hover img {
+            transform: scale(1.2);
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 80%;
+            max-width: 400px;
+            border: 2px solid #f8b500;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #f8b500;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #d49b00;
+        }
+
+        #eqbuttion {
+            background-color: #f8b500;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        #eqbuttion:hover {
+            background-color: #d49b00;
+            transform: translateY(-3px);
+        }
+
+        #eqbuttion a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .image {
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .main {
+                padding: 10px;
+            }
+
+            .sub {
+                padding: 15px;
+            }
+
+            .profilepic img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .socialicons {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+                padding: 10px;
+            }
+
+            form {
+                width: 100%;
+                padding: 0 10px;
+            }
+
+            input[type="text"] {
+                width: 100%;
+                max-width: none;
+            }
+
+            button[type="submit"], #eqbuttion {
+                width: 100%;
+                max-width: none;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .sub h2, .sub h3, .sub h1 {
+                font-size: 18px;
+            }
+
+            .savecontact {
+                right: 10px;
+                bottom: 10px;
+                padding: 5px;
+                font-size: 14px;
+            }
+
+            .savecontact img {
+                width: 30px;
+                height: 30px;
+            }
+
+            button[type="submit"], #eqbuttion {
+                font-size: 12px;
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="savecontact">
+        <a href="./assets/WORLD_OF_JEWELLERS.vcf" download="WORLD_OF_JEWELLERS.vcf">
+            <img id="contact_img" width="50" height="50" src="https://img.icons8.com/officel/50/apple-contacts.png" alt="apple-contacts" />
+            save contact
+        </a>
+    </div>
+
+    <div class="main">
+        <div class="section section1">
+            <div class="sub">
+                <div class="banner"></div>
+                <div class="profilepic">
+                    <img src="./images/logo.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="section section2">
+            <div class="sub">
+                <div class="profile">
+                    <span class="company">WORLD OF JEWELLERS</span>
+                </div>
+                <div class="socialicons">
+                    <div class="icon">
+                        <a href="tel:+919886563383">
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/apple-phone.png" alt="apple-phone" />
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="https://api.whatsapp.com/send?phone=919886563383&text=Hello!%20got%20your%20contact%20from%20bizvizcards.com">
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/whatsapp.png" alt="whatsapp" />
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="https://www.google.com/maps/place/World+of+Jewels/@12.9444775,77.5483751,15z/data=!4m6!3m5!1s0x3bae3f31c1f458eb:0xb45e774744b62a2e!8m2!3d12.9444775!4d77.5483751!16s%2Fg%2F11s3cgpkq5?entry=ttu&g_ep=EgoyMDI0MDkyOS4wIKXMDSoASAFQAw%3D%3D">
+                            <img width="40" height="40" src="https://img.icons8.com/color/48/marker.png" alt="marker" />
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="https://www.instagram.com/worldofjewels2021?igshid=OGQ5ZDc2ODk2ZA%3D%3D">
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section3">
+            <div class="sub" id="sub3">
+                <h1>About</h1>
+                <p>
+                    World of jewels, we specialize in crafting timeless pieces that embody elegance and luxury. With a
+                    passion for Antique, Fusion, and Italian jewelry, I ensure that each design is created with
+                    meticulous attention to detail and personalized craftsmanship. Our goal is to deliver exquisite,
+                    high-quality jewelry that brings joy and sophistication to every customer.
+                </p>
+            </div>
+        </div>
+        <div class="section section4">
+            <div class="sub">
+                <form action="" onsubmit="sendWhatsAppMessage(event)">
+                    <h2>Send Details to WhatsApp</h2>
+                    <input id="whatsappNumber" type="text" placeholder="Enter WhatsApp No." />
+                    <button id="beautiful buttion" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="section section5">
+            <div class="sub">
+                <h3>Collection 1</h3>
+                <div class="image">
+                    <img src="images/Collection1.jpeg" alt="" width="79%">
+                </div>
+                <button id="eqbuttion"><a href="https://api.whatsapp.com/send?phone=919886563383&text=can%20you%20give%20me%20more%20information%20about%20collection%201">Enquire now</a></button>
+                <br>
+            </div>
+        </div>
+
+        <div class="section section6">
+            <div class="sub">
+                <h3>Collection 2</h3>
+                <div class="image">
+                    <img src="images/colletion2.jpeg" alt="" width="79%">
+                </div>
+                <button id="eqbuttion"><a href="https://api.whatsapp.com/send?phone=919886563383&text=can%20you%20give%20me%20more%20information%20about%20collection%202">Enquire now</a></button>
+                <br>
+            </div>
+        </div>
+        <div class="section section6">
+
+            <div class="sub">
+                <h3>Payment</h3>
+                <div class="image">
+                </div>
+                <button id="eqbuttion"><a href="upi://pay?pa=worldofjewels@icici&pn=WORLDOFJEWELS&tr=EZYS9886045311&cu=INR&mc=5172">Pay now</a></button>
+                <br>
+            </div>
+        </div>
+    </div>
+    <script>
+        function sendWhatsAppMessage(event) {
+            event.preventDefault(); // Prevent form submission, so the page doesn't reload
+
+            const phoneNumberInput = document.getElementById("whatsappNumber");
+            const phoneNumber = phoneNumberInput.value.trim(); // Get the number and remove any extra spaces
+
+            if (phoneNumber) {
+                const message = encodeURIComponent(`
+        Hello,
+
+Pleasure connecting with you!! Below are my details:
+
+Digital Business Card/Profile:
+https://bizvizcard.com/AnandKumar
+
+*Note: If this is our first chat, reply hi and then click the links above. (Wapp Policy)* 
+
+Regards, 
+Anand Kumar
+Owner
+World Of Jewellers
+
+Powered by: digicarda.com  
+                `);
+
+                // Redirect to WhatsApp with the entered phone number and the message
+                window.open(`https://wa.me/91${phoneNumber}?text=${message}`, '_blank');
+            } else {
+                alert("Please enter a valid WhatsApp number.");
+            }
+        }
+    </script>
+</body>
+
+</html>
